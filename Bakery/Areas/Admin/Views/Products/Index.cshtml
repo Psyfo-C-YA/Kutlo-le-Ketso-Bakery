@@ -1,0 +1,50 @@
+﻿@*@model IEnumerable<Bakery.Models.Product>*@
+
+<div class="row pt-4">
+    <div class="col-6">
+        <h2 class="text-primary">Products List</h2>
+    </div>
+</div>
+<br/>
+    <table id="tblData" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Product Name
+                </th>
+                <th>
+                    Flavour
+                </th>
+                <th>
+                    Size
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Availability
+                </th>
+                @*<th>
+                    ImageUrl
+                </th>*@
+                <th>
+                    Category
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+    </table>
+
+    <p>
+        <a asp-action="Upsert" class="btn btn-primary">
+            Create New &nbsp; <i class="bi bi-plus-circle"></i>
+        </a>
+    </p>
+
+@section Scripts{
+    <script src="~/js/product.js"></script>
+}
+
+                

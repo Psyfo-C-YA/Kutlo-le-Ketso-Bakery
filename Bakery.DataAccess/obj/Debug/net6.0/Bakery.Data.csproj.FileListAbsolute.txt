@@ -1,0 +1,5 @@
+C:\Users\Public\Azure\AppServices\Bakery.DataAccess\obj\Debug\net6.0\Bakery.Data.csproj.AssemblyReference.cache
+C:\Users\Public\Azure\AppServices\Bakery.DataAccess\obj\Debug\net6.0\Bakery.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\Azure\AppServices\Bakery.DataAccess\obj\Debug\net6.0\Bakery.Data.AssemblyInfoInputs.cache
+C:\Users\Public\Azure\AppServices\Bakery.DataAccess\obj\Debug\net6.0\Bakery.Data.AssemblyInfo.cs
+C:\Users\Public\Azure\AppServices\Bakery.DataAccess\obj\Debug\net6.0\Bakery.Data.csproj.CoreCompileInputs.cache

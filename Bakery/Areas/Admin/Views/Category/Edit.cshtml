@@ -1,0 +1,42 @@
+﻿@model Bakery.Models.Category
+
+<div class="row pt-4">
+    <div class="col-6">
+        <h2 class="text-primary">Edit Category</h2>
+    </div>
+</div>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisplayOrder" class="control-label"></label>
+                <input asp-for="DisplayOrder" class="form-control" />
+                <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDateTime" class="control-label"></label>
+                <input asp-for="CreatedDateTime" class="form-control" />
+                <span asp-validation-for="CreatedDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

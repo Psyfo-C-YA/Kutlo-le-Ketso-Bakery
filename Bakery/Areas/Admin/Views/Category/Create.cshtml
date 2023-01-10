@@ -1,0 +1,58 @@
+﻿@model Bakery.Models.Category
+
+<div class="row pt-4">
+    <div class="col-6">
+        <h2 class="text-primary">Create Category</h2>
+    </div>
+</div>
+
+<form asp-action="Create">
+    <fieldset>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Name" class="form-label mt-4">Category Name</label>
+            <input asp-for="Name" class="form-control" placeholder="Sponge Cake" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DisplayOrder" class="form-label mt-4">Order Display</label>
+            <input asp-for="DisplayOrder" class="form-control" placeholder="5" />
+            <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CreatedDateTime" class="form-label mt-4">Date Created</label>
+            <input asp-for="CreatedDateTime" class="form-control" placeholder="2022:01:15" />
+            <span asp-validation-for="CreatedDateTime" class="text-danger"></span>
+        </div>
+       <br />
+        <div class="form-group">
+            <button type="submit" value="Create" class="btn btn-primary">
+                Create &nbsp; <i class="bi bi-plus-circle"></i>
+            </button>
+             <a asp-action="Index" class="btn btn-secondary">List</a>
+            @*<input type="submit" value="Create" id="bi bi-plus-circle"  /> *@
+        </div>
+       
+    </fieldset>
+
+    <hr />
+   
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}
+
+
+@*
+<h1>Create</h1>
+
+<h4>Category</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+       
+    </div>
+</div>
+*@
+
